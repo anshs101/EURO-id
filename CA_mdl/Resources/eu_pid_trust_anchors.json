@@ -1,0 +1,11 @@
+{
+  "_comment": "Populate with real EU PID issuer certs from https://ec.europa.eu/tools/lotl/eu-lotl.xml before production. Each cert is DER-encoded, base64-encoded.",
+  "anchors": [
+    {
+      "countryCode": "DE",
+      "issuerName": "TEST ENTRY - Replace with real cert",
+      "certBase64": "REPLACE_WITH_REAL_DER_BASE64_CERT",
+      "validUntil": "2030-01-01"
+    }
+  ]
+}

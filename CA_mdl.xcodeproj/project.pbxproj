@@ -6,6 +6,12 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		71005E30639AC1775BE01301 /* SwiftCBOR in Frameworks */ = {isa = PBXBuildFile; productRef = D084826BC6DE4DC9B9F4B793 /* SwiftCBOR */; };
+		D583C63F2FD3ADF800F1D991 /* ca-dmv-iaca-root-ca-crt.cer in Resources */ = {isa = PBXBuildFile; fileRef = D583C63E2FD3ADF800F1D991 /* ca-dmv-iaca-root-ca-crt.cer */; };
+		D583C6432FD9DEBA00F1D991 /* SwiftCBOR in Frameworks */ = {isa = PBXBuildFile; productRef = D583C6422FD9DEBA00F1D991 /* SwiftCBOR */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		D583C6212FD3AB2300F1D991 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -27,21 +33,39 @@
 		D583C6132FD3AB2200F1D991 /* CA_mdl.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CA_mdl.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D583C6202FD3AB2300F1D991 /* CA_mdlTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CA_mdlTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D583C62A2FD3AB2300F1D991 /* CA_mdlUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CA_mdlUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D583C63E2FD3ADF800F1D991 /* ca-dmv-iaca-root-ca-crt.cer */ = {isa = PBXFileReference; lastKnownFileType = text; path = "ca-dmv-iaca-root-ca-crt.cer"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		FC96B7934BFE58E2FC5B5CC6 /* Exceptions for "CA_mdl" folder in "CA_mdl" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				"Supplemental-Info.plist",
+			);
+			target = D583C6122FD3AB2200F1D991 /* CA_mdl */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		D583C6152FD3AB2200F1D991 /* CA_mdl */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				FC96B7934BFE58E2FC5B5CC6 /* Exceptions for "CA_mdl" folder in "CA_mdl" target */,
+			);
 			path = CA_mdl;
 			sourceTree = "<group>";
 		};
 		D583C6232FD3AB2300F1D991 /* CA_mdlTests */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+			);
 			path = CA_mdlTests;
 			sourceTree = "<group>";
 		};
 		D583C62D2FD3AB2300F1D991 /* CA_mdlUITests */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+			);
 			path = CA_mdlUITests;
 			sourceTree = "<group>";
 		};
@@ -52,6 +76,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D583C6432FD9DEBA00F1D991 /* SwiftCBOR in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -59,6 +84,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				71005E30639AC1775BE01301 /* SwiftCBOR in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -79,6 +105,7 @@
 				D583C6232FD3AB2300F1D991 /* CA_mdlTests */,
 				D583C62D2FD3AB2300F1D991 /* CA_mdlUITests */,
 				D583C6142FD3AB2200F1D991 /* Products */,
+				D583C63E2FD3ADF800F1D991 /* ca-dmv-iaca-root-ca-crt.cer */,
 			);
 			sourceTree = "<group>";
 		};
@@ -112,6 +139,7 @@
 			);
 			name = CA_mdl;
 			packageProductDependencies = (
+				D583C6422FD9DEBA00F1D991 /* SwiftCBOR */,
 			);
 			productName = CA_mdl;
 			productReference = D583C6132FD3AB2200F1D991 /* CA_mdl.app */;
@@ -135,6 +163,7 @@
 			);
 			name = CA_mdlTests;
 			packageProductDependencies = (
+				D084826BC6DE4DC9B9F4B793 /* SwiftCBOR */,
 			);
 			productName = CA_mdlTests;
 			productReference = D583C6202FD3AB2300F1D991 /* CA_mdlTests.xctest */;
@@ -157,8 +186,6 @@
 				D583C62D2FD3AB2300F1D991 /* CA_mdlUITests */,
 			);
 			name = CA_mdlUITests;
-			packageProductDependencies = (
-			);
 			productName = CA_mdlUITests;
 			productReference = D583C62A2FD3AB2300F1D991 /* CA_mdlUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
@@ -195,6 +222,10 @@
 			);
 			mainGroup = D583C60A2FD3AB2200F1D991;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				D583C6402FD9DEBA00F1D991 /* XCRemoteSwiftPackageReference "SwiftCBOR" */,
+				D583C6412FD9DED700F1D991 /* XCRemoteSwiftPackageReference "swift-argument-parser" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = D583C6142FD3AB2200F1D991 /* Products */;
 			projectDirPath = "";
@@ -212,6 +243,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D583C63F2FD3ADF800F1D991 /* ca-dmv-iaca-root-ca-crt.cer in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -397,6 +429,9 @@
 				CURRENT_PROJECT_VERSION = 1;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "CA_mdl/Supplemental-Info.plist";
+				INFOPLIST_KEY_NSBluetoothAlwaysUsageDescription = "CA mDL Verifier uses Bluetooth to receive mDL data from the holder's device over the ISO 18013-5 BLE transport.";
+				INFOPLIST_KEY_NSCameraUsageDescription = "CA mDL Verifier uses the camera to scan the mDL QR code displayed by the holder's device.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -428,6 +463,9 @@
 				CURRENT_PROJECT_VERSION = 1;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "CA_mdl/Supplemental-Info.plist";
+				INFOPLIST_KEY_NSBluetoothAlwaysUsageDescription = "CA mDL Verifier uses Bluetooth to receive mDL data from the holder's device over the ISO 18013-5 BLE transport.";
+				INFOPLIST_KEY_NSCameraUsageDescription = "CA mDL Verifier uses the camera to scan the mDL QR code displayed by the holder's device.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -570,6 +608,38 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		D583C6402FD9DEBA00F1D991 /* XCRemoteSwiftPackageReference "SwiftCBOR" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/valpackett/SwiftCBOR";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+		D583C6412FD9DED700F1D991 /* XCRemoteSwiftPackageReference "swift-argument-parser" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/apple/swift-argument-parser.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.8.2;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		D084826BC6DE4DC9B9F4B793 /* SwiftCBOR */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D583C6402FD9DEBA00F1D991 /* XCRemoteSwiftPackageReference "SwiftCBOR" */;
+			productName = SwiftCBOR;
+		};
+		D583C6422FD9DEBA00F1D991 /* SwiftCBOR */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D583C6402FD9DEBA00F1D991 /* XCRemoteSwiftPackageReference "SwiftCBOR" */;
+			productName = SwiftCBOR;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = D583C60B2FD3AB2200F1D991 /* Project object */;
 }

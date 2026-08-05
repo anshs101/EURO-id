@@ -1,17 +1,13 @@
-//
-//  CA_mdlApp.swift
-//  CA_mdl
-//
-//  Created by sarika saxena on 6/5/26.
-//
-
 import SwiftUI
 
 @main
 struct CA_mdlApp: App {
+    @State private var session = MdlVerificationSession()
+
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            HomeView()
+                .environment(session)
         }
     }
 }

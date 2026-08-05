@@ -1,0 +1,17 @@
+{
+  "_comment": "Fixture for TrustAnchorStore unit tests only. Not a real certificate; add to the CA_mdlTests target only, never to CA_mdl.",
+  "anchors": [
+    {
+      "countryCode": "DE",
+      "issuerName": "TEST Fixture Issuer DE",
+      "certBase64": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA",
+      "validUntil": "2030-01-01"
+    },
+    {
+      "countryCode": "FR",
+      "issuerName": "TEST Fixture Issuer FR",
+      "certBase64": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEB",
+      "validUntil": "2030-01-01"
+    }
+  ]
+}

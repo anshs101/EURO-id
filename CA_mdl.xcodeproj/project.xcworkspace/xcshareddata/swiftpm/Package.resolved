@@ -1,0 +1,24 @@
+{
+  "originHash" : "797eab5f8f53a798262daaa8e12c25ee64341f7ca8e77f45e9d91bdbdad07186",
+  "pins" : [
+    {
+      "identity" : "swift-argument-parser",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/apple/swift-argument-parser.git",
+      "state" : {
+        "revision" : "6a52f3251125d74daf04fcbd5e6f08a75d074382",
+        "version" : "1.8.2"
+      }
+    },
+    {
+      "identity" : "swiftcbor",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/valpackett/SwiftCBOR",
+      "state" : {
+        "branch" : "master",
+        "revision" : "fd929a6d8f7651ce0f63fc99397fd5762358cc29"
+      }
+    }
+  ],
+  "version" : 3
+}

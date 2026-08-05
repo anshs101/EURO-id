@@ -1,24 +1,14 @@
-//
-//  ContentView.swift
-//  CA_mdl
-//
-//  Created by sarika saxena on 6/5/26.
-//
-
 import SwiftUI
 
+// ContentView is no longer the root; HomeView is injected directly from CA_mdlApp.
+// This file is kept as a stub to satisfy any storyboard or preview references.
 struct ContentView: View {
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
-        }
-        .padding()
+        HomeView()
     }
 }
 
 #Preview {
     ContentView()
+        .environment(MdlVerificationSession())
 }
