@@ -117,7 +117,7 @@ final class BleTransport: NSObject {
         timeoutTask = Task { [weak self] in
             try? await Task.sleep(for: .seconds(BleTransport.sessionTimeout))
             if !Task.isCancelled {
-                await self?.fail(MdlError.connectionTimeout)
+                self?.fail(MdlError.connectionTimeout)
             }
         }
     }

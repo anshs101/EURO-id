@@ -20,7 +20,7 @@ actor EUTrustedListManager {
                 print("EUTrustedListManager: LOTL fetch returned a non-2xx status; keeping bundled fallback")
                 return
             }
-            let entries = try TrustedListParser.parsePIDCerts(from: data)
+            let entries = try await TrustedListParser.parsePIDCerts(from: data)
             guard !entries.isEmpty else {
                 print("EUTrustedListManager: LOTL parse yielded no PID entries; keeping bundled fallback")
                 return

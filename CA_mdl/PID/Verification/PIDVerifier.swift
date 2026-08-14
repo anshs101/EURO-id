@@ -11,7 +11,7 @@ actor PIDVerifier {
     private init() {}
 
     func verify(vpToken: Data, expectedNonce: String, countryCode: String) async throws -> VerifiedPIDData {
-        switch VPTokenHandler.detectFormat(from: vpToken) {
+        switch await VPTokenHandler.detectFormat(from: vpToken) {
         case .msoMdoc(let cborData):
             return try await mdocVerifier.verify(cborData: cborData, expectedNonce: expectedNonce, countryCode: countryCode)
         case .sdJWT(let jwtString):

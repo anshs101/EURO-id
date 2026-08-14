@@ -130,7 +130,7 @@ struct PIDVerificationTests {
         let response: CBOR = .map([.utf8String("documents"): .array([doc])])
         let cborData = Data(response.encode())
 
-        let verifier = MsoMdocPIDVerifier()
+        let verifier = await MsoMdocPIDVerifier()
         do {
             _ = try await verifier.verify(cborData: cborData, expectedNonce: "n", countryCode: "DE")
             Issue.record("Expected PIDError.unsupportedCredentialType to be thrown")
